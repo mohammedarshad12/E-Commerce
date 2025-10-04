@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectroMart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ElectroMart</h1>
+    <div class="cart-icon" onclick="toggleCart()">
+      🛒 Cart (<span id="cart-count">0</span>)
+    </div>
+  </header>
+
+  <main>
+    <div class="product-list" id="product-list">
+      <div class="product">
+        <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS65_KXiFiDKrhdOIBZYS_L9tbi9zACFFPRSxs-GEQ67zs7D0ARMcXx1r2hOUkXXx56EIEFYoOOaMIj30Cpr8U_F99llG5ssfohEFZsoym5J0jhcFg8BMbMJYW9bCmKX1zF0htlIQ&usqp=CAc" alt="Laptop">
+        <h2>Dell Inspiron 15</h2>
+        <p>Rs:55,000</p>
+        <button onclick="addToCart('101')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61BgEfmZC8L.jpg" alt="Smartphone">
+        <h2>Samsung Galaxy Z Fold 6</h2>
+        <p>Rs:1,49,999</p>
+        <button onclick="addToCart('102')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61UgZSYRllL.jpg" alt="Headphones">
+        <h2>Sony WH-1000XM4</h2>
+        <p>Rs:25,000</p>
+        <button onclick="addToCart('103')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MXM63ref_FV98_VW_34FR+watch-case-44-aluminum-starlight-cell-se_VW_34FR+watch-face-44-aluminum-starlight-se_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=QVR6TmZRU2x1RjZIVW5wdDlyenB5RW5TeWJ6QW43NUFnQ2V4cmRFc1VnWURIZXhSOVNUU1hpL1hkOUNjbEVLTGg2SVo4bXpMTHFJVjN3ZUJNRHZYdVF1Z0RaeFB5LzRxZEliRVE2WkswOWxGRkt5OUoySXA2clR0bnBITC90L2FGeUVTRStFTzh3dFc3MncrSVI0VFYxRVpGM0VTYkFEYWkrVUpmdm5HMEsvZzdYL1dmbHI1ck0vS0dDZmJkTUNtcXlYK1hMV0U1ZW9xcCtlRHF3V3gyUWw1MXVoaC9rQ0tINDRNUEExR2JHRU5mTDhYbjVxRUx5MXNydDUvcjcyYQ" alt="Smartwatch">
+        <h2>Apple Watch SE</h2>
+        <p>Rs:25,000</p>
+        <button onclick="addToCart('104')">Add to Cart</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cart Dropdown -->
+  <div class="cart-dropdown" id="cart-dropdown">
+    <h2>My Cart</h2>
+    <ul id="dropdown-items"></ul>
+    <p><strong>Total:</strong> Rs.<span id="dropdown-total">0</span></p>
+    <a href="cart.html"><button>View Cart</button></a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
